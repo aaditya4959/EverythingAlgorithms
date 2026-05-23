@@ -15,7 +15,6 @@ int main() {
             cout << "*";
         }
         cout << endl;
-        ..
     }
 
 
