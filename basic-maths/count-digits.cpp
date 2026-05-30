@@ -40,6 +40,31 @@ int greatestCommonDivisor( int x , int y){ // This is the brute approach and the
     return gcd;
 }
 
+// Checking Armstrong Number is also ease peezy 
+class ArmstrongChecker {
+public:
+    // Static method to check if a number is an Armstrong number
+    static bool isArmstrong(int num) {
+        int k = to_string(num).length(); // Get number of digits
+        int sum = 0;
+        int n = num;
+
+        while (n > 0) {
+            int ld = n % 10;            // Get last digit
+            sum += pow(ld, k);          // Add ld^k to sum
+            n /= 10;                    // Remove last digit
+        }
+
+        return sum == num; // Return true if sum equals original number
+    }
+};
+
+
+// Print all Divisors Optimal Approach
+
+
+// Prime check Optimal Approach
+
 
 int main(){
 
