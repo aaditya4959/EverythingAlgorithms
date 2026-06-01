@@ -1,7 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void printNameRecursively(int x, string name){
+    if(x == 0){
+        return;
+    }
+    cout<< name <<endl;
+    printNameRecursively(x-1,name);
+}
+
+
 int main(){
-    cout<<"This is the file for basic recursions and their implementations."<<endl;
-    cout<<"Why the contribution is bot being made."<<endl;
+    printNameRecursively(10, "Alice");
+    return 0;
 }
