@@ -9,8 +9,24 @@ void printNameRecursively(int x, string name){
     printNameRecursively(x-1,name);
 }
 
+void printN(int x, int N){
+    if(x > N){
+        return;
+    }
+    cout<<x<<endl;
+    printN(x+1, N);
+}
+
+void printNBack( int N ){
+    if(N == 0){
+        return;
+    }
+    printNBack(N-1);
+    cout<<N<<endl;
+}
+
 
 int main(){
-    printNameRecursively(10, "Alice");
+    printNBack(10);
     return 0;
 }
