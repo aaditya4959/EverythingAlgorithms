@@ -25,8 +25,13 @@ void printNBack( int N ){
     cout<<N<<endl;
 }
 
+int firstNSum( int N ){
+    
+}
+
 
 int main(){
-    printNBack(10);
+    int ans = firstNSum(0, 5);
+    cout<<ans;
     return 0;
 }
