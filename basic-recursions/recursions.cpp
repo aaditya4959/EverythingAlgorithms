@@ -62,6 +62,18 @@ bool isStringPalindrome( string s , int start, int end ){
     return isStringPalindrome(s, start+1, end - 1);
 }
 
+// this can also be done with the help of just two variables.
+int fibonacci(int N) {
+    if (N <= 1) {
+        return N;
+    }
+    int last = fibonacci(N - 1);   
+    int slast = fibonacci(N - 2);  
+
+    return last + slast;
+}
+
+
 
 
 
