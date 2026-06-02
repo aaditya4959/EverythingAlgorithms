@@ -25,9 +25,17 @@ void printNBack( int N ){
     cout<<N<<endl;
 }
 
+int sumOfN(int N){
+    if(N == 0){
+        return 0;
+    }
+    return  N + sumOfN(N-1);
+}
+
 
 
 
 int main(){
+    cout<<sumOfN(5)<<endl;
     return 0;
 }
