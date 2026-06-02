@@ -51,15 +51,22 @@ void reverseArray(int arr[], int start, int end) {
 }
 
 
+bool isStringPalindrome( string s , int start, int end ){
+    if(start>=end){
+        return true;
+    }
+    if(s[start] != s[end]){
+        return false ;
+    }
+
+    return isStringPalindrome(s, start+1, end - 1);
+}
+
+
 
 
 int main(){
-        int arr[] = {1, 2, 3, 4, 5};
-
-    reverseArray(arr, 0, 4);
-
-    for (int x : arr) {
-        cout << x << " ";
-    }
+    string s = "shit";
+    cout<<isStringPalindrome(s,0,s.length()-1)<<endl;
     return 0;
 }
